@@ -1,0 +1,18 @@
+<ion-content padding>
+  <form (ngSubmit)="Signin()">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="login.email" name="email" ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="login.password" name="password"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <button ion-button type="submit"> Login </button>
+  </form>
+</ion-content>
